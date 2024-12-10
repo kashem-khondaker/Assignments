@@ -47,7 +47,11 @@ class Book:
             print(f"\nError: Book '{self.__title}' was not borrowed.")
     
     def view_book_info(self):
-        availability_status = "Available" if self.__availability else "Not Available"
+        "Available" 
+        if self.__availability:
+            pass 
+        else:
+            availability_status = "Not Available"
         print(f"Book ID: {self.__book_id}, Title: '{self.__title}', Author: {self.__author}, Availability: {availability_status}")
     
     def get_book_id(self):
