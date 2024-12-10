@@ -54,17 +54,12 @@ class Book:
             availability_status = "Not Available"
         print(f"Book ID: {self.__book_id}, Title: '{self.__title}', Author: {self.__author}, Availability: {availability_status}")
 
-
-
-# Menu-driven system
-
 print("\n--- Welcome to the Library Management System ---")
-    
-    # Adding some initial books (manual addition)
-book1 =  Book(101, "The Great Gatsby", "F. Scott Fitzgerald")
-book2 =  Book(104, "The Catcher in the Rye", "J.D. Salinger")
-book3 =  Book(103, "1984", "George Orwell")
-book4 =  Book(102, "To Kill a Mockingbird", "Harper Lee")
+
+book1 = Book(101, "The Great Gatsby", "F. Scott Fitzgerald")
+book2 = Book(104, "The Catcher in the Rye", "J.D. Salinger")
+book3 = Book(103, "1984", "George Orwell")
+book4 = Book(102, "To Kill a Mockingbird", "Harper Lee")
 book5 = Book(111, "Python programming", "JON")
 book6 = Book(222, "Python for beginner", "Jane Austen")
 book7 = Book(333, "Basic to Advanced Python", "Harper Lee")
