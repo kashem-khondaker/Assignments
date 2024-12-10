@@ -47,7 +47,7 @@ class Book:
             print(f"\nError: Book '{self.__title}' was not borrowed.")
     
     def view_book_info(self):
-        "Available" 
+        availability_status = "Available" 
         if self.__availability:
             pass 
         else:
