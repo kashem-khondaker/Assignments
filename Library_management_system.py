@@ -3,21 +3,21 @@ class Library:
     book_list = []
     
     @classmethod
-    def entry_book(cls, book):
-        cls.book_list.append(book)
+    def entry_book(self, book):
+        self.book_list.append(book)
 
     @classmethod
-    def view_all_books(cls):
-        if not cls.book_list:
+    def view_all_books(self):
+        if not self.book_list:
             print("\nNo books available in the library yet!")
         else:
             print("\n--- List of All Books ---")
-            for book in cls.book_list:
+            for book in self.book_list:
                 book.view_book_info()
     
     @classmethod
-    def find_book_by_id(cls, book_id):
-        for book in cls.book_list:
+    def find_book_by_id(self, book_id):
+        for book in self.book_list:
             if book._Book__book_id == book_id:
                 return book
         return None
@@ -53,9 +53,7 @@ class Book:
         else:
             availability_status = "Not Available"
         print(f"Book ID: {self.__book_id}, Title: '{self.__title}', Author: {self.__author}, Availability: {availability_status}")
-    
-    def get_book_id(self):
-        return self.__book_id
+
 
 
 # Menu-driven system
