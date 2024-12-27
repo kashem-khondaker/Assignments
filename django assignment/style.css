@@ -1,0 +1,29 @@
+
+nav{
+    background-color:  #0c3136;
+   
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  body{
+    background-color: #0e1217;
+    color: white;
+  }
+
+
+  .nav-logo-img{
+    width: 30px;
+  }
+  .hero-img{
+    width: 400px;
+  }
+  div{
+    border: 1px solid red;
+  }
+  button,a:hover{
+    cursor: pointer;
+    color: red;
+  }
+  
